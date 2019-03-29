@@ -12,15 +12,15 @@
     <link rel="icon" href="./pictures/favicon.png" type="image/png">
 </head>
 
-<body>
-    <main class="container">
+<body class="bg-dark">
+    <main class="container bg-light">
         <div class="row">
 
             <div class="col">
                 <header>
-                    <div class='navbar'>
-                        <img src="./pictures/favicon.png" id='topLogo' class='img-fluid mx-auto'>
-                        <button type="button" class="myButtonOrange" data-toggle="modal"
+                    <div class='navbar jumbotron'>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2F43gIPEb5XJbhuJpORQxD7Ao3A4LpgHo5fl62tnVtxfmqZmW" id='topLogo' class='img-fluid mx-auto'alt="Bamazon">
+                        <button type="btn" class="btn btn-success" data-toggle="modal"
                             data-target=".cartModal">Checkout</button>
                     </div>
                 </header>
@@ -67,8 +67,8 @@
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="myButtonGray" data-dismiss="modal">Close</button>
-                                <button type="button" class="myButtonOrange" id="purchase" data-toggle="modal"
+                                <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-warning" id="purchase" data-toggle="modal"
                                     data-target=".finalModal" data-dismiss="modal">Purchase</button>
                             </div>
                         </div>
@@ -87,7 +87,7 @@
                                 <p id='messageModalContent'></p>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn myButtonOrange btn-primary" id="OK"
+                                <button type="button" class="btn btn-warning" id="OK"
                                     data-dismiss="modal">OK</button>
                             </div>
                         </div>
@@ -99,7 +99,7 @@
                         <div class="modal-content">
                             <div class="modal-header" id="finalTitle">
                                 <h3>Purchase confirmed!</h3>
-                                <button type="button" id='ok' class="close" data-dismiss="modal" aria-label="Close">
+                                <button type="button" id='ok' class="btn btn-warning" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
@@ -107,7 +107,7 @@
                                 <p>Item(s) will ship soon.</p>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn myButtonOrange btn-primary" id="OK"
+                                <button type="button" class="btn btn btn-warning" id="OK"
                                     data-dismiss="modal">OK</button>
                             </div>
                         </div>

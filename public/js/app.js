@@ -27,7 +27,7 @@ $(function() {
       .addClass("quantInput");
 
     const button = $("<button>")
-      .addClass("myButtonCart add-to-cart")
+      .addClass("myButtonCart add-to-cart btn btn-danger")
       .text("Add to Cart")
       .attr("data-id", item.id);
 
@@ -79,9 +79,9 @@ $(function() {
     const numRequested = $(`#${data[0].id}`).val();
     if (numRequested <= 0) {
       messageModal("Please choose a valid quantity");
-    } else if (numRequested > data.stock_quantity) {
+    } else if (numRequested > data[0].stock_quantity) {
       messageModal(
-        `Sorry. There are only ${data.stock_quantity} left in stock`
+        `Sorry. There are only ${data[0].stock_quantity} left in stock`
       );
     } else {
       addCartRow(numRequested, data);
